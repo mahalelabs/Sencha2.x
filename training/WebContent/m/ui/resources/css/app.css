@@ -40,3 +40,10 @@
 .dataview_name {
 	float:left;
 }
+
+.screen{
+	height:90%;
+}
+.tool{
+	height:5%;
+}

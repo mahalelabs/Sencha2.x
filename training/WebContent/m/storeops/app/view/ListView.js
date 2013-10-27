@@ -10,7 +10,7 @@ Ext.define('app.view.ListView', {
 		indexBar:true,
 		//mode:'MULTI',  // multiple selction 
 		grouped:false,
-	    ui: 'round',  //normal , round
+	    ui: 'normal',  //normal , round
         itemTpl: [
                 
 				'<div class="">{[this.getName(values)]}</div>',

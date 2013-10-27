@@ -5,12 +5,8 @@ Ext.define('app.view.FormPanel', {
 	            
 	],
 	config : {
-		
-		cls : 'my_formpanel',
-		items : [{
-			xtype : 'label',
-			html:'Form Panel Sample'
-		}, {
+		cls : 'my_formpanel screen',
+		items : [ {
 			xtype : 'textfield',
 			name : 'name',
 			label : 'Name'
@@ -55,6 +51,15 @@ Ext.define('app.view.FormPanel', {
                 yearFrom: 1980,
             }
         },
+        {
+        	xtype:'togglefield',
+      	    label: 'Married',
+      	    listeners:{
+    		  change:function( me, Slider, thumb, newValue, oldValue, eOpts  ){
+    			  console.log(newValue);
+    		  }
+    	  }
+        },
 		{
             xtype: 'fieldset',
             id: 'fieldset2',
@@ -74,18 +79,41 @@ Ext.define('app.view.FormPanel', {
                     label: 'Android',
                     value: 'Android'
                 },
-                {
-                    name : 'platform',
-                    label: 'Blackberry',
-                    value: 'Blackberry'
-                },
-                {
-                    name : 'platform',
-                    label: 'Windows',
-                    value: 'windows'
-                }
+//                {
+//                    name : 'platform',
+//                    label: 'Blackberry',
+//                    value: 'Blackberry'
+//                },
+//                {
+//                    name : 'platform',
+//                    label: 'Windows',
+//                    value: 'windows'
+//                }
             ]
         },{
+        	  xtype:'spinnerfield',
+	    	  label: 'Expertize',
+	          minValue: 0,
+	          maxValue: 10,
+	          increment:1,
+	          cycle: true,
+	          listeners:{
+	    		  change:function( self, newValue , oldValue , eOpts ){
+	    			  console.log(newValue);
+	    		  }
+	    	  }
+        },{
+      	  xtype:'sliderfield',
+    	  label: 'Level',
+    	  minValue:0,
+    	  maxValue:10,
+    	  listeners:{
+    		  change:function( self, newValue , oldValue , eOpts ){
+    			  console.log(eOpts);
+    		  }
+    	  }
+          
+    },{
             xtype: 'toolbar',
             layout: {
                 pack: 'center'

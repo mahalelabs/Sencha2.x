@@ -15,7 +15,7 @@ Ext.define("WeatherApp.utils.WeatherUtils", {
 			url : 'http://api.worldweatheronline.com/free/v1/weather.ashx',
 			callbackKey : 'callback',
 			params : {
-				key : '579natwfurc74zqrt3qy6utp',
+				key : 'rkhzagnemt7xfrtzapc2s8sq', //579natwfurc74zqrt3qy6utp
 				q : city,
 				format : 'json',
 				num_of_days : days,
