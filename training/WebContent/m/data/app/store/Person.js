@@ -14,12 +14,32 @@ Ext.define('app.store.Person', {
 //		     ],
 		     
 		proxy: {
-		         type: 'ajax',
-		         url : 'user.json',
+			
+			     // 1. Ajax 
+		       
+				 type: 'ajax', //  ajax, rest , memory , localstorage
+		         url : 'city.json',
 		         reader: {
-		           type: 'json',
-		         },
-		}
+			           type: 'json',
+			           rootProperty: 'city.users',
+			         },
+			         
+			     // 2. Local Storage
+		        
+//				 type: 'localstorage', //  ajax, rest , memory , localstorage
+//		         id:'localusers', // specific to local storage
+		         
+		         // 3. Session Storage
+		       
+//		         type: 'sessionstorage', //  ajax, rest , memory , localstorage
+//		         id:'localusers', // specific to local storage
+		         
+		  
+		},
+		sorters: [{
+			property: 'name',
+			direction: 'ASC' //DESC
+			}]
 		       
 	
 	}

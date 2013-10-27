@@ -4,7 +4,7 @@ Ext.application({
 	requires : [ 'Ext.MessageBox' ],
 
 	views : [
-	         'Carousel',
+	         'Carousel','DataUtil'
 	       
 	         
 	],
