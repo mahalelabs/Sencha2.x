@@ -6,7 +6,7 @@ Ext.define('app.model.Person', {
 			type : 'string'
 		}, {
 			name : 'domain',
-			type : 'int'
+			type : 'string'
 		}, {
 			name : 'phone',
 			type : 'string'
