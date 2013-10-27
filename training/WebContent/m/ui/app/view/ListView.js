@@ -7,6 +7,9 @@ Ext.define('app.view.ListView', {
 		fullscreen:false,
 		cls:'my_listview',
 		store:'person_store',
+		indexBar:true,
+		grouped:false,
+	    ui: 'round',  //normal , round
         itemTpl: [
                 
 				'<div class="">{[this.getName(values)]}</div>',
