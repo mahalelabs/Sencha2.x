@@ -13,10 +13,10 @@ Ext.application({
 
 	],
 	models : [
-	          'Person'
+	          'Person','Beverages'
 	],
 	stores : [
-	          'Person'
+	          'Person','Beverages'
 	],
 	icon : {
 		'57' : 'resources/icons/Icon.png',

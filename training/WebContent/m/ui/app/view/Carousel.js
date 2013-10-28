@@ -1,7 +1,7 @@
 Ext.define('app.view.Carousel', {
 	extend : 'Ext.Carousel',
 	alias : 'widget.mycorousel',
-	requires : ['app.view.ListView','app.view.DataView','app.view.TabPanel'],
+	requires : ['app.view.ListView','app.view.DataView','app.view.TabPanel','app.view.NestedList'],
 	config : {
 		fullscreen : true,
 		cls : 'my_carousel',
@@ -53,6 +53,17 @@ Ext.define('app.view.Carousel', {
 				title:'TabPanel Demo'
 			},{
 				xtype:'tabpanel'
+			}]
+		},{
+			xtype:'panel',
+			items:[
+//			       {
+//				xtype:'toolbar',
+//				cls:'tool',
+//				title:'NestList Demo'
+//			},
+			{
+				xtype:'nestedlist'
 			}]
 		}]
 	},
